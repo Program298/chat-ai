@@ -1,4 +1,4 @@
-'use server';
+// 'use server';
 
 import { sendMessageToAgent } from '@/services/agent-api';
 import type { AgentResponse } from '@/services/agent-api';

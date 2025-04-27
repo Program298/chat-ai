@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Chat AI Agent",
+  "version": "1.0",
+  "description": "Built with Next.js!",
+  "action": {
+    "default_popup": "index.html" 
+  },
+
+  "permissions": [],
+  "content_security_policy": {
+"extension_pages": "script-src 'self'; object-src 'self';"
+}
+}

@@ -1,6 +1,11 @@
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
+  output: 'export',
+  images: {
+    unoptimized: true, // ถ้าใช้ <Image> ของ Next ต้องใส่อันนี้
+  },
+  
   /* config options here */
   typescript: {
     ignoreBuildErrors: true,
@@ -16,5 +21,7 @@ const nextConfig: NextConfig = {
   // If you encounter issues with Turbopack, uncomment the line below
   // experimental: { turbopack: false },
 };
+
+module.exports = nextConfig;
 
 export default nextConfig;
